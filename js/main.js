@@ -127,8 +127,10 @@
 
 
 // Load useless HTML files
-loadHTML('navbar', 'html/nav.html');
-
+document.addEventListener("DOMContentLoaded", function () {
+    loadHTML('navbar', 'html/nav.html');
+    loadHTML('footer', 'html/footer.html');
+});
 
 
 const loadHTML = (elementId, filePath) => {
