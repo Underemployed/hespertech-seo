@@ -40,24 +40,6 @@
 
     <div id="navbar"></div>
 
-    <script>
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'html/nav.html', true);
-        xhr.onload = function () {
-            if (xhr.status === 200) {
-                document.getElementById('navbar').innerHTML = xhr.responseText;
-            } else {
-                console.error('Error loading navbar:', xhr.status, xhr.statusText);
-            }
-        };
-        xhr.onerror = function () {
-            console.error('Request failed');
-        };
-        xhr.send();
-    </script>
-
-
-
 
     <!-- Full Screen Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
@@ -260,6 +242,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
