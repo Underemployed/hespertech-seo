@@ -125,27 +125,48 @@
 })(jQuery);
 
 
-
-// Load useless HTML files
-document.addEventListener("DOMContentLoaded", function () {
-    loadHTML('navbar', 'html/nav.html');
-    loadHTML('nav', 'html/nav.html');
-    loadHTML('footer', 'html/footer.html');
+$(document).ready(function () {
+    // Load reusable HTML files
+    loadHTML('#navbar', 'html/nav.html');
+    loadHTML('#nav', 'html/nav.html');
+    loadHTML('#footer', 'html/footer.html');
 });
 
+function loadHTML(elementSelector, filePath) {
+    $.get(filePath, function (data) {
+        $(elementSelector).html(data);
 
-const loadHTML = (elementId, filePath) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', filePath, true);
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            document.getElementById(elementId).innerHTML = xhr.responseText;
-        } else {
-            console.error(`Error loading ${filePath}:`, xhr.status, xhr.statusText);
-        }
+        let currentPath = window.location.pathname.split("/").pop().split(".")[0];
+        updateActiveLink(currentPath);
+    }).fail(function (xhr, status, error) {
+        console.error(`Error loading ${filePath}: ${status} - ${error}`);
+    });
+}
+
+// Update the active link based on the current page
+function updateActiveLink(currentPath) {
+    console.log("Current Path:", currentPath);
+
+    if (currentPath === "" || currentPath === "/") currentPath = "index";
+
+    currentPath = currentPath.split("#")[0];
+
+    const pathToIdMap = {
+        "index": "index",
+        "about": "about",
+        "service": "service",
+        "portfolio": "portfolio",
+        "contact": "contact",
+        "history": "history"
     };
-    xhr.onerror = function () {
-        console.error(`Request for ${filePath} failed`);
-    };
-    xhr.send();
+
+    const elementId = pathToIdMap[currentPath] || currentPath;
+    const element = $("#" + elementId);
+
+    if (element.length) {
+        $(".navbar-nav .nav-link").removeClass("active");
+        element.addClass("active");
+    } else {
+        // console.error(`Element with id '${elementId}' not found`);
+    }
 }
