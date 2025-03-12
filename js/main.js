@@ -129,6 +129,7 @@
 // Load useless HTML files
 document.addEventListener("DOMContentLoaded", function () {
     loadHTML('navbar', 'html/nav.html');
+    loadHTML('nav', 'html/nav.html');
     loadHTML('footer', 'html/footer.html');
 });
 
