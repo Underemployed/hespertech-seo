@@ -44,6 +44,11 @@
     }
 }
 
+h1{
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -59,7 +64,10 @@
 
 
 /*** Heading ***/
-h1,
+h1{
+    font-weight:500;
+}
+
 h2,
 .fw-bold {
     font-weight: 800 !important;
@@ -83,7 +91,9 @@ h6,
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     transition: .5s;
+    border-radius: 4px;
 }
+
 
 .btn-primary,
 .btn-secondary {
@@ -147,7 +157,7 @@ h6,
 }
 
 .navbar-dark .navbar-brand h1 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .navbar-dark .navbar-toggler {
