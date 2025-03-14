@@ -16,23 +16,26 @@
 }
 
 .project-header {
-    padding: 1.5rem;
+    padding: 2 rem;
     cursor: pointer;
 }
 
 .project-image {
     width: 100%;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
     border-radius: 8px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
 }
 
 .project-title {
-    margin: 1rem 0 0.5rem;
+    margin: 1rem 1.5rem 0.5rem;
     color: #2d3748;
 }
 
 .project-category {
+    margin: 0 1.5rem 1.0rem ;
     display: inline-block;
     background: #e2e8f0;
     padding: 0.25rem 0.75rem;
@@ -54,7 +57,7 @@
 
 .tech-stack span {
     display: inline-block;
-    background: #4299e1;
+    background: #1c99ff;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
