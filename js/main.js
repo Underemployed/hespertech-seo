@@ -129,6 +129,7 @@
 })(jQuery);
 
 
+
 $(document).ready(function () {
     // Keep track of loaded components
     let loadedComponents = 0;
@@ -159,6 +160,10 @@ function loadHTML(elementSelector, filePath, callback) {
     });
 }
 
+
+
+
+
 // Update the active link based on the current page
 function updateActiveLink(currentPath) {
     console.log("Current Path:", currentPath);
@@ -173,10 +178,12 @@ function updateActiveLink(currentPath) {
         "service": "service",
         "portfolio": "portfolio",
         "contact": "contact",
-        "history": "history"
+        "job" : "job"
     };
 
     const elementId = pathToIdMap[currentPath] || currentPath;
+
+
     const element = $("#" + elementId);
 
     if (element.length) {
