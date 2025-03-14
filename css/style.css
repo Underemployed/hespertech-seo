@@ -70,7 +70,8 @@ h1{
 
 h2,
 .fw-bold {
-    font-weight: 800 !important;
+    font-weight: 700 !important;
+    font-family: 'Nunito', sans-serif;
 }
 
 h3,
