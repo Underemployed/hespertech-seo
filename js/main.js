@@ -173,10 +173,13 @@ function updateActiveLink(currentPath) {
         "service": "service",
         "portfolio": "portfolio",
         "contact": "contact",
-        "history": "history"
+        "job" : "job"
     };
 
     const elementId = pathToIdMap[currentPath] || currentPath;
+    const displayName = (elementId == "index") ? "Home" : elementId;
+    document.title = "HesperTech | " + displayName.charAt(0).toUpperCase() + displayName.slice(1);
+
     const element = $("#" + elementId);
 
     if (element.length) {
