@@ -13,7 +13,11 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    try {
+        new WOW().init();
+    } catch (error) {
+        // console.error('Error initializing WOW.js:', error);
+    }
 
 
     // Sticky Navbar
@@ -126,20 +130,32 @@
 
 
 $(document).ready(function () {
+    // Keep track of loaded components
+    let loadedComponents = 0;
+    const totalComponents = 3;
+
+    function onComponentLoad() {
+        loadedComponents++;
+        if (loadedComponents === totalComponents) {
+            // Update active link only after all components are loaded
+            let currentPath = window.location.pathname.split("/").pop().split(".")[0];
+            updateActiveLink(currentPath);
+        }
+    }
+
     // Load reusable HTML files
-    loadHTML('#navbar', 'html/nav.html');
-    loadHTML('#nav', 'html/nav.html');
-    loadHTML('#footer', 'html/footer.html');
+    loadHTML('#navbar', 'html/nav.html', onComponentLoad);
+    loadHTML('#nav', 'html/nav.html', onComponentLoad);
+    loadHTML('#footer', 'html/footer.html', onComponentLoad);
 });
 
-function loadHTML(elementSelector, filePath) {
+function loadHTML(elementSelector, filePath, callback) {
     $.get(filePath, function (data) {
         $(elementSelector).html(data);
-
-        let currentPath = window.location.pathname.split("/").pop().split(".")[0];
-        updateActiveLink(currentPath);
+        if (callback) callback();
     }).fail(function (xhr, status, error) {
         console.error(`Error loading ${filePath}: ${status} - ${error}`);
+        if (callback) callback(); // Call callback even on failure to maintain count
     });
 }
 
