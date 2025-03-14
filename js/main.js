@@ -129,6 +129,7 @@
 })(jQuery);
 
 
+
 $(document).ready(function () {
     // Keep track of loaded components
     let loadedComponents = 0;
@@ -159,6 +160,10 @@ function loadHTML(elementSelector, filePath, callback) {
     });
 }
 
+
+
+
+
 // Update the active link based on the current page
 function updateActiveLink(currentPath) {
     console.log("Current Path:", currentPath);
@@ -177,8 +182,7 @@ function updateActiveLink(currentPath) {
     };
 
     const elementId = pathToIdMap[currentPath] || currentPath;
-    const displayName = (elementId == "index") ? "Home" : elementId;
-    document.title = "HesperTech | " + displayName.charAt(0).toUpperCase() + displayName.slice(1);
+
 
     const element = $("#" + elementId);
 
