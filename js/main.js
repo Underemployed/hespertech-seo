@@ -146,6 +146,7 @@ $(document).ready(function () {
 
     // Load reusable HTML files
     loadHTML('#navbar', 'html/nav.html', onComponentLoad);
+    loadHTML('#timeline', 'html/timeline.html', onComponentLoad);
     loadHTML('#nav', 'html/nav.html', onComponentLoad);
     loadHTML('#footer', 'html/footer.html', onComponentLoad);
 });
