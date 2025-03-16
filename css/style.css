@@ -385,9 +385,14 @@ h6,
     background: var(--primary);
 }
 
+.testimonial-item {
+    transition: transform 0.3s ease-in-out;
+}
+
 .testimonial-carousel .owl-item.center {
+    transform: scale(1.2);
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .testimonial-carousel .owl-item .testimonial-item {
@@ -399,7 +404,9 @@ h6,
     box-shadow: 0 0 30px #DDDDDD;
 }
 
-
+.owl-item{
+    
+}
 /*** Team ***/
 .team-item {
     transition: .5s;
