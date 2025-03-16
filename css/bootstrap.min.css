@@ -16,6 +16,8 @@
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
+    --white-text:#f2f2fe;
+    
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
     --bs-primary: #06A3DA;
@@ -8317,8 +8319,9 @@ fieldset:disabled .btn {
 }
 
 .text-white {
-    color: #fff !important
+    color: var(--white-text) !important
 }
+
 
 .text-body {
     color: #6B6A75 !important
@@ -8328,6 +8331,9 @@ fieldset:disabled .btn {
     color: #6c757d !important
 }
 
+.text-black{
+    color: var(--bs-gray-dark);
+}
 .text-black-50 {
     color: rgba(0, 0, 0, 0.5) !important
 }

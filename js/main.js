@@ -14,7 +14,10 @@
     
     // Initiate the wowjs
     try {
-        new WOW().init();
+        new WOW({
+            offset: 120 // trigger animations when element is 100px from viewport
+            // mobile: false // disable animations on mobile devices if performance is an issue
+        }).init();
     } catch (error) {
         // console.error('Error initializing WOW.js:', error);
     }
@@ -194,3 +197,26 @@ function updateActiveLink(currentPath) {
         // console.error(`Element with id '${elementId}' not found`);
     }
 }
+
+// owl carousel thing
+$(document).ready(function () {
+    $('.project-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        items: 3,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 }
+        },
+        navText: [
+            '<i class="fa fa-chevron-left"></i>',
+            '<i class="fa fa-chevron-right"></i>'
+        ]
+    });
+});
