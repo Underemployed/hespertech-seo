@@ -207,8 +207,8 @@ $(document).ready(function () {
         nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
         responsive: {
             0: { items: 1 },
             768: { items: 2 },

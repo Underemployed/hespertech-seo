@@ -6,16 +6,14 @@
     --dark: #313131;
     --dark-600:#616161;
 }
-:root {
+/* :root {
     --primary: #007cba;
-}
+} */
 
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
 }
-
-
 
 .border-primary {
     border-color: var(--primary) !important;
@@ -599,3 +597,4 @@ h6,
 .owl-next {
     right: 20px;
 }
+
