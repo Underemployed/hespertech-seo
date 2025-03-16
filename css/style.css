@@ -386,7 +386,7 @@ h6,
 }
 
 .testimonial-item {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s all ease-in-out;
 }
 
 .testimonial-carousel .owl-item.center {
