@@ -1,6 +1,6 @@
 .timeline-wrapper {
     position: relative;
-    padding: 50px 0;
+    padding: 18px 0;
 }
 
 .timeline-line {
@@ -90,6 +90,12 @@
 
 .timeline-item.reverse .timeline-content {
     margin-left: auto;
+}
+
+#timeline{
+    background-image: url("../img/proj1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Responsive Design */
