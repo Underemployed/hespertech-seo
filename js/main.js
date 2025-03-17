@@ -209,11 +209,27 @@ $(document).ready(function () {
         nav: true,
         dots: false,
         autoplay: true,
+        responsive: true,
         smartSpeed: 1000,
         responsive: {
-        2000: { items: 4 },
-            1500: { items: 3 },
-            768: { items: 2 }
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 3
+            },
+            // 1400: {
+            //     items: 4
+            // }
         },
 
         navText: [
