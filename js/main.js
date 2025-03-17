@@ -211,8 +211,8 @@ $(document).ready(function () {
         autoplay: true,
         smartSpeed: 1000,
         responsive: {
-        1200: { items: 4 },
-            992: { items: 3 },
+        2000: { items: 4 },
+            1500: { items: 3 },
             768: { items: 2 }
         },
 
