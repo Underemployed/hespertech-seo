@@ -198,22 +198,24 @@ function updateActiveLink(currentPath) {
     }
 }
 
-// owl carousel thing
+// Project carousel
 $(document).ready(function () {
-    $('.project-carousel').owlCarousel({
+    let carousel = $('.project-carousel').owlCarousel({
+        center: true,
         loop: true,
-        margin: 20,
-        items: 3,
+        margin: 30,
+        responsiveClass: true,
+        center: true,
         nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: false,
+        smartSpeed: 1000,
         responsive: {
-            0: { items: 1 },
-            768: { items: 2 },
-            992: { items: 3 }
+        1200: { items: 4 },
+            992: { items: 3 },
+            768: { items: 2 }
         },
+
         navText: [
             '<i class="fa fa-chevron-left"></i>',
             '<i class="fa fa-chevron-right"></i>'
