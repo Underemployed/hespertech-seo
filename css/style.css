@@ -676,3 +676,26 @@ h6,
 .owl-next {
     right: 20px;
 }
+
+
+/* Add to existing project-overlay styles */
+.project-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+/* Button styling */
+.project-overlay .btn {
+    align-self: flex-end;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 124, 186, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-overlay .btn:hover {
+    background-color: #006699;
+    transform: translateY(-2px);
+}
