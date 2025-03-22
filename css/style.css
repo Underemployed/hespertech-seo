@@ -1,6 +1,7 @@
 /********** Template CSS **********/
+/* old blue #06a3da */
 :root {
-    --primary: #06A3DA;
+    --primary: #007cba;
     --secondary: #34AD54;
     --light: #EEF9FF;
     --dark: #313131;
@@ -441,6 +442,7 @@ h6,
 
 .testimonial-carousel .owl-item {
     transition: transform 0.5s ease-in-out;
+    
 }
 
 .testimonial-carousel .owl-item.center {
@@ -451,6 +453,7 @@ h6,
 .testimonial-carousel .owl-item.center .testimonial-item {
     background: #FFFFFF !important;
     box-shadow: 0 0 30px #DDDDDD;
+    margin:25px;
 }
 
 /*** Team ***/
@@ -645,7 +648,7 @@ h6,
 }
 
 .project-carousel .item:hover .carousel-img {
-    transform: scale(1.1);
+    transform: scale(1.04);
     /* Scale image on hover */
 }
 

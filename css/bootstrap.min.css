@@ -233,12 +233,12 @@ sup {
 }
 
 a {
-    color: #06A3DA;
+    color: #007cba;
     text-decoration: none
 }
 
 a:hover {
-    color: #0582ae
+    color: #007cba;
 }
 
 a:not([href]):not([class]),
@@ -8287,7 +8287,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #06A3DA !important
+    color: #007cba !important
 }
 
 .text-secondary {
@@ -8347,7 +8347,7 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-    background-color: #06A3DA !important
+    background-color: #007cba !important
 }
 
 .bg-secondary {
