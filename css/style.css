@@ -153,6 +153,8 @@ h6,
 
 
 /*** Navbar ***/
+
+
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
@@ -453,7 +455,7 @@ h6,
 .testimonial-carousel .owl-item.center .testimonial-item {
     background: #FFFFFF !important;
     box-shadow: 0 0 30px #DDDDDD;
-    margin:25px;
+    margin:35px;
 }
 
 /*** Team ***/
