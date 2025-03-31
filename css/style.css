@@ -704,3 +704,7 @@ h6,
     background-color: #006699;
     transform: translateY(-2px);
 }
+
+.bg-gray{
+    background-color: #efefef !important;
+}
