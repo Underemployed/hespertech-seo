@@ -1,18 +1,19 @@
 
 
-document.querySelectorAll('.project-header').forEach(header => {
-    header.addEventListener('click', () => {
-        const card = header.parentElement;
-        const isActive = card.classList.contains('active');
+// project
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.project-tab');
+    const contents = document.querySelectorAll('.project-content');
 
-        // Close all cards first
-        document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', function () {
+            // Remove active states
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
 
-        // Toggle clicked card if not already active
-        if (!isActive) {
-            card.classList.add('active');
-            // Scroll to the card smoothly
-            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
+            // Add active states
+            this.classList.add('active');
+            contents[index].classList.add('active');
+        });
     });
 });
