@@ -3445,6 +3445,16 @@ fieldset:disabled .btn {
     color: #06A3DA;
     border-color: #06A3DA
 }
+.btn-outline-darkbl {
+    color: #007cba;
+    border-color: #007cba
+}
+
+.btn-outline-darkbl:hover {
+    color: var(--bs-light);
+    background-color: #007cba;
+    border-color: #007cba
+}
 
 .btn-outline-primary:hover {
     color: var(--bs-light);
