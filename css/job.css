@@ -13,6 +13,7 @@
     background-color: #2bb1e0;
     border-color: #1facde
 }
+
 .job-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
