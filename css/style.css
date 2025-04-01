@@ -708,3 +708,9 @@ h6,
 .bg-gray{
     background-color: #efefef !important;
 }
+
+.carousel-item img{
+    height:900px;
+    overflow:hidden;
+    object-fit:cover;
+}
