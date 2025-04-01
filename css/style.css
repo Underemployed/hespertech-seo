@@ -683,4 +683,25 @@ h6,
 }
 
 
+.project-carousel .owl-dots {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 
+.project-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DDDDDD;
+    border-radius: 2px;
+    transition: width 0.5s, background 0.5s;
+}
+
+.project-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--primary);
+}

@@ -203,11 +203,11 @@ $(document).ready(function () {
     let carousel = $('.project-carousel').owlCarousel({
         center: true,
         loop: true,
-        margin: 30,
+        margin: 30, 
         responsiveClass: true,
         center: true,
         nav: true,
-        dots: false,
+        dots: true,
         autoplay: true,
         responsive: true,
         smartSpeed: 1000,
