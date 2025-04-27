@@ -219,6 +219,7 @@ h6,
         position: fixed;
         background: #FFFFFF;
     }
+    
 
     .navbar-dark .navbar-nav .nav-link::before {
         position: absolute;
