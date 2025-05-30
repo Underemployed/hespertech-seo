@@ -136,7 +136,7 @@
 $(document).ready(function () {
     // Keep track of loaded components
     let loadedComponents = 0;
-    const totalComponents = 3;
+    const totalComponents = 5;
 
     function onComponentLoad() {
         loadedComponents++;
@@ -151,6 +151,7 @@ $(document).ready(function () {
     loadHTML('#navbar', 'html/nav.html', onComponentLoad);
     loadHTML('#timeline', 'html/timeline.html', onComponentLoad);
     loadHTML('#nav', 'html/nav.html', onComponentLoad);
+    loadHTML('#client_logo', 'html/client_logo.html', onComponentLoad);
     loadHTML('#footer', 'html/footer.html', onComponentLoad);
 });
 
