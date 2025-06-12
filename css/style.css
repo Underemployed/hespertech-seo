@@ -562,6 +562,18 @@ h6,
     }
 }
 
+.logo_crop{
+    margin-bottom: 30px;
+    overflow:hidden;
+}
+.logo_crop img {
+    width: 100%;
+    
+    object-fit:cover;
+    object-position: top;
+    transition: transform 0.5s ease-in-out;
+}
+
 /* About Us Styles */
 .experience-box {
     position: absolute;
