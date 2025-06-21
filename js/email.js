@@ -12,6 +12,40 @@ const url = "https://docs.google.com/spreadsheets/d/1acQ7qOlcUXHxdZ1QxOwBkcVVMxc
 
 
 
+function testEmailTemplatesSendToSelf() {
+    const testName = "john doe";
+    const testEmail = "johndoe@example.com";
+    const testSubject = "Product Inquiry";
+    const testMessage = "I would like to know more about your product pricing and availability.";
+
+    const clientHTML = createClientEmailTemplate(testName, testSubject, testMessage);
+    const inboxHTML = createInboxEmailTemplate(testName, testSubject, testMessage, testEmail);
+
+    const myEmail = Session.getActiveUser().getEmail();
+
+    // // Send the "client" styled email
+    // MailApp.sendEmail({
+    //   to: myEmail,
+    //   subject: "TEST: Client Email Template",
+    //   htmlBody: clientHTML
+    // });
+
+    // Send the "inbox" styled email
+    MailApp.sendEmail({
+        to: myEmail,
+        subject: "TEST: Inbox Email Template",
+        htmlBody: inboxHTML
+    });
+}
+
+
+
+
+
+
+
+
+
 function createSuccessResponse() {
     return ContentService.createTextOutput(JSON.stringify({ "result": "success" }))
         .setMimeType(ContentService.MimeType.JSON);
@@ -52,25 +86,18 @@ function createClientEmailTemplate(name, subject, message) {
 
     return `
     
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="UTF-8">
-        <title>Hespertech Acknowledgement</title>
+Hey ${name},
 
-      </head>
-      <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f1117; color: #f0f0f0; margin: 0; padding: 0;">
-        <div class="container" style="background-color: #1a1c23; margin: 0 auto; padding: 40px; max-width: 800px; min-height: 100vh; box-sizing: border-box;">
-          <h2 style="color: #58d68d;">Hey ${name},</h2>
-          <p>Thanks for contacting <span class="highlight" style="color: #f1c40f;">Hespertech</span>! We've received your message regarding:</p>
-          <p><strong>${subject}</strong></p>
-          <p>Here's what you said:</p>
-          <div class="message" style="font-style: italic; background-color: #2c2f36; padding: 15px; border-left: 4px solid #58d68d; margin: 20px 0; color: #ddd;">"${message}"</div>
-          <p>We'll get back to you as soon as possible.</p>
-          <div class="footer" style="margin-top: 40px; font-size: 0.85em; color: #888; text-align: center;">Hespertech · Innovate Beyond Limits</div>
-        </div>
-      </body>
-    </html>
+Thanks for contacting Hespertech! We've received your message regarding:
+
+${subject}
+
+Here's a copy of what you sent us:
+"${message}"
+
+We'll get back to you as soon as possible.
+
+Hespertech · Innovate Beyond Limits
 
     `.trim();
 }
@@ -80,26 +107,15 @@ function createInboxEmailTemplate(name, subject, message, email) {
     name = name.replace(/\b(\w)/g, (s) => s.toUpperCase());
 
     return `
-    <!DOCTYPE html>
-    <html>
-      <head>
+        From: ${name}
+        Email: ${email}
+        Subject: ${subject}
 
-      </head>
-      <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
-        <div class="container" style="background-color: #ffffff; margin: 30px auto; padding: 30px; border-radius: 8px; max-width: 700px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);">
-          <h2 style="color: #222222; margin-top: 0;">📩 New Message Received</h2>
-          <div class="meta" style="color: #555; margin-bottom: 20px;">
-            <strong>From:</strong> ${name}<br>
-            <strong>Email:</strong> <a href="mailto:${email}" style="color: #007BFF; text-decoration: none;">${email}</a><br>
-            <strong>Subject:</strong> ${subject}
-          </div>
-          <div class="message" style="font-style: italic; color: #444; background-color: #f9f9f9; padding: 15px; border-left: 4px solid #4CAF50; margin-top: 15px; white-space: pre-wrap;">${message}</div>
-          <div class="footer" style="margin-top: 30px; font-size: 0.9em; color: #999999; text-align: center;">Hespertech · Contact Form Submission</div>
-        </div>
-      </body>
-    </html>
+        Message:
+        ${message}
 
-    `, trim();
+        Hespertech - Contact Form Submission
+    `.trim();
 }
 
 function validateInput(e) {
@@ -134,7 +150,6 @@ function appendToSheet(dataObject, sheet) {
     sheet.appendRow(Object.values(dataObject));
 }
 
-// main logic
 function doPost(e) {
     try {
         // Validate input using your existing function
@@ -192,7 +207,9 @@ function doPost(e) {
     }
 }
 
-// no reason
+
+
+
 function doGet(e) {
     return HtmlService.createHtmlOutput("Were you bored ?<br>Well, I was too!<br>So I made this page.<br>Have a nice day :)");
 }
