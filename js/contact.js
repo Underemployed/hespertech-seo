@@ -1,7 +1,7 @@
 $("#client-form").submit(function (e) {
     e.preventDefault();
     $(".send-div").show();
-    $("loader-text").html("Sending...<br>Please wait...");
+    $(".loader-text").html("Sending...<br>Please wait...");
     const formData = $(this).serializeArray();
     const data = {};
 
@@ -21,12 +21,12 @@ https://script.google.com/macros/s/AKfycbxJlv1NmFlwGK6TAzSaIe1etXk6FUJlU6vw6pvBS
         data: JSON.stringify(data),
         success: function (response) {
             // console.log("Success:", response);
-            $("loader-text").html("Message sent successfully");
-            $(".send-div").fadeOut(1000);
+            $(".loader-text").html("Message sent successfully");
+            $(".send-div").fadeOut(1500);
         },
         error: function (err) {
-            $("loader-text").html("An error occurred while sending the message.<br>Please try again later.");
-            $(".send-div").fadeOut(1000);
+            $(".loader-text").html("An error occurred while sending the message.<br>Please try again later.");
+            $(".send-div").fadeOut(1500);
         
            
         }
