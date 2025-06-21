@@ -1,5 +1,7 @@
 $("#client-form").submit(function (e) {
     e.preventDefault();
+    $(".send-div").show();
+    $("loader-text").html("Sending...<br>Please wait...");
     const formData = $(this).serializeArray();
     const data = {};
 
@@ -7,7 +9,7 @@ $("#client-form").submit(function (e) {
         data[obj.name] = obj.value.trim();
     });
 
-    console.log("Sending:", data);
+    // console.log("Sending:", data);
 
     $.ajax({
         url: `
@@ -18,12 +20,15 @@ https://script.google.com/macros/s/AKfycbxJlv1NmFlwGK6TAzSaIe1etXk6FUJlU6vw6pvBS
         method: "POST",
         data: JSON.stringify(data),
         success: function (response) {
-            console.log("Success:", response);
-            alert("Message sent successfully!");
+            // console.log("Success:", response);
+            $("loader-text").html("Message sent successfully");
+            $(".send-div").fadeOut(1000);
         },
         error: function (err) {
-            console.error("Error:", err);
-            alert("An error occurred while sending the message.");
+            $("loader-text").html("An error occurred while sending the message.<br>Please try again later.");
+            $(".send-div").fadeOut(1000);
+        
+           
         }
     });
 });
