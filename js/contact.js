@@ -13,7 +13,6 @@ $("#client-form").submit(function (e) {
 
     $.ajax({
         url: `
-
 https://script.google.com/macros/s/AKfycbxJlv1NmFlwGK6TAzSaIe1etXk6FUJlU6vw6pvBSOu25oDbYEmUPDJ6P0JBL32C1L6W/exec
 
         `.trim(),
