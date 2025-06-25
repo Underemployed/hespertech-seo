@@ -1,12 +1,14 @@
 /*
 Underemployed 23-07-2024
 <!-- child of body  -->
-<div class="loader-div">
-<img class="loader-img" src="loading.gif" style="height: 120px;width: auto;" />
-</div> 
+<div class="send-div"><img class="loader-img" src="img/gifs/mailing_no.gif" style="height: auto; width: 300px" />
+             <div class="loader-text">Sending your mail... Please wait. </div>
+        </div>
 <div class="send-div">
 <img class="loader-img" src="send.gif" style="height: 150px;width: auto;" />
-</div>  */
+</div> 
+
+*/
 
 /* 
     // submit animation
@@ -48,6 +50,11 @@ Underemployed 23-07-2024
     opacity: 0.8;
 }
 
+.error{
+    background-color: rgb(213, 127, 22);}
+.success{
+    background-color: rgb(22, 149, 213);
+}
 .loader-img {
     user-select: none;
     position: absolute;
