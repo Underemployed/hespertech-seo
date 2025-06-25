@@ -1,3 +1,8 @@
+// made by Underemployed 24-06-2025
+// pls add how many hours u wasted on this appscript
+// total = 8
+// i was bored
+
 const headers = {
     emailSheet: ["Name", "Email", "Subject", "Body", "Date", "Time"],
     error: ["Date", "Error Message"]
@@ -30,12 +35,12 @@ function testEmailTemplatesSendToSelf() {
     //   htmlBody: clientHTML
     // });
 
-    // // Send the "inbox" styled email
-    // MailApp.sendEmail({
-    //   to: myEmail,
-    //   subject: "idk d.",
-    //   htmlBody: inboxHTML
-    // });
+    // Send the "inbox" styled email
+    MailApp.sendEmail({
+        to: myEmail,
+        subject: "idk d.",
+        htmlBody: inboxHTML
+    });
 }
 
 
@@ -260,6 +265,7 @@ function createInboxEmailTemplate(name, subject, body, email) {
     name = name.replace(/\b(\w)/g, (s) => s.toUpperCase());
 
     return `
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -386,7 +392,7 @@ function createInboxEmailTemplate(name, subject, body, email) {
                                                                                     style="margin:0 0 12px 0;color:#333;font-size:16px;font-weight:600;">
                                                                                     Client Message</h3>
                                                                                 <p
-                                                                                    style="margin:0;font-weight:400;font-size:15px;line-height:1.6;color:#333;white-space:pre-wrap;">
+                                                                                    style="margin:0;font-weight:400;font-size:15px;line-height:1.6;color:#333;">
                                                                                     ${body}
                                                                                 </p>
                                                                             </div>
@@ -513,7 +519,7 @@ function doPost(e) {
 
         const inboxMail = createInboxEmailTemplate(obj.name, obj.subject, obj.body, obj.email);
 
-        // Send the confirmation email
+        // Email i should receive
         MailApp.sendEmail({
             to: mygmail,
             subject: `From: ${obj.name} - ${obj.subject}`,

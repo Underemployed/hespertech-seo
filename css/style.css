@@ -187,7 +187,7 @@ h6,
     border-color: var(--primary) !important;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1098) {
     .sticky-top.navbar-dark {
         position: relative;
         background: #FFFFFF;
@@ -205,7 +205,7 @@ h6,
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1108px) {
     .navbar-dark {
         position: absolute;
         width: 100%;
@@ -527,7 +527,7 @@ h6,
 
 
 /*** Miscellaneous ***/
-@media (min-width: 991.98px) {
+@media (min-width: 1098) {
     .facts {
         position: relative;
         margin-top: -75px;
@@ -763,4 +763,7 @@ h6,
     -webkit-animation: none !important;
 }
 
+.footer-mobile-ml{
+    margin-left: none !important;
+}
 /* helper class end *
