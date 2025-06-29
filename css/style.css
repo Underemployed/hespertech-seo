@@ -249,6 +249,7 @@ h6,
 }
 
 
+
 /*** Carousel ***/
 .carousel-caption {
     top: 0;
@@ -775,3 +776,13 @@ h6,
 
 
 /* navbar-logo end*/
+
+
+@media (max-width: 1400px) {
+    .email-truncate {
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
