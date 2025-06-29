@@ -187,7 +187,8 @@ h6,
     border-color: var(--primary) !important;
 }
 
-@media (max-width: 991.98px) {
+/* maybe navbar */
+@media (max-width: 1100px) {
     .sticky-top.navbar-dark {
         position: relative;
         background: #FFFFFF;
@@ -204,8 +205,8 @@ h6,
         color: var(--primary);
     }
 }
-
-@media (min-width: 992px) {
+/* maybe navbar */
+@media (min-width: 1100px) {
     .navbar-dark {
         position: absolute;
         width: 100%;
@@ -772,8 +773,5 @@ h6,
 
 /* navbar-logo */
 
-.navbar-logo{
-    
-}
 
 /* navbar-logo end*/
