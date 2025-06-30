@@ -30,6 +30,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/loader.css" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
 </head>
 
 <body>
@@ -81,101 +82,228 @@
     <!-- Full Screen Search End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="ct-form">
-        <div class="container py-5">
+    <div class="d-flex justify-content-center mb-4">
+        <a href="contact.html" class="btn btn-outline-primary px-4">
+            <i class="fa fa-arrow-left me-2"></i>Back to Contact
+        </a>
+    </div>
+    
+    <!-- Vendor Registration Form Start -->
+    <div class="container-fluid pb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container pb-5 form-container" >
+    
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h1 class="mb-0"> Register here<br>to be a vendor with us.</h1>
+                <h5 class="fw-bold text-primary text-uppercase">Partner With Us</h5>
+                <h1 class="mb-0">Register here to be a vendor with us</h1>
             </div>
-           
+    
             <div class="row g-5">
                 <div class="col wow slideInUp" data-wow-delay="0.3s">
-                    <form id="client-form">
-                        <div class="row g-3">
+                    <form id="vendor-form">
+                        <!-- Company Information -->
+                        <div class="row g-3 mb-4">
                             <div class="col-md-6">
-                                <label style="font-size: 12px;">Company Name*</label>
-                                <input name="name" type="text" required class="form-control border-0 bg-light px-4" placeholder="Company Name"
-                                    style="height: 55px;">
+                                <label>Company Name <span class="required">*</span></label>
+                                <input name="company_name" type="text" required class="form-control border-0 bg-light px-4"
+                                    placeholder="Company Name">
                             </div>
                             <div class="col-md-6">
-                                <label style="font-size: 12px;">Type of the Firm*</label>
-                                <select name="firm_type" required class="form-select border-0 bg-light px-4" id="">
-                                    <option value="Public Limited Co">Public Limited Co</option>
-                                    <option value="Partnership Co">Partnership Co</option>
-                                    <option value="proprietorship">Proprietorship</option>
-                                    <option value="Govt. Sector">Govt Sector</option>
+                                <label>Type of Firm <span class="required">*</span></label>
+                                <select name="firm_type" required class="form-select border-0 bg-light px-4">
+                                    <option value="">Select firm type</option>
+                                    <option value="Public Limited Co">Public Limited Company</option>
+                                    <option value="Private Limited Co">Private Limited Company</option>
+                                    <option value="Partnership Co">Partnership Company</option>
+                                    <option value="Proprietorship">Proprietorship</option>
+                                    <option value="LLP">Limited Liability Partnership (LLP)</option>
+                                    <option value="Govt. Sector">Government Sector</option>
                                     <option value="Others">Others</option>
                                 </select>
                             </div>
+                        </div>
+    
+                        <div class="row g-3 mb-4">
                             <div class="col-md-6">
-                                <label style="font-size: 12px;">Status of Company*</label>
-                                <select name="firm_type" required class="form-select border-0 bg-light px-4" id="">
-                                    <option value="MANUFACTURER">MANUFACTURER</option>
-                                    <option value="AUTHORISED DEALER">AUTHORISED DEALER</option>
-                                    <option value="STOCKIST/TRADER">STOCKIST/TRADER</option>
-                                    <option value="IMPORTER/INDIAN AGENT">IMPORTER/INDIAN AGENT</option>
-                                    <option value="SERVICE PROVIDER">SERVICE PROVIDER</option>
+                                <label>Status of Company <span class="required">*</span></label>
+                                <select name="company_status" required class="form-select border-0 bg-light px-4">
+                                    <option value="">Select company status</option>
+                                    <option value="MANUFACTURER">Manufacturer</option>
+                                    <option value="AUTHORISED DEALER">Authorised Dealer</option>
+                                    <option value="STOCKIST/TRADER">Stockist/Trader</option>
+                                    <option value="IMPORTER/INDIAN AGENT">Importer/Indian Agent</option>
+                                    <option value="SERVICE PROVIDER">Service Provider</option>
+                                    <option value="DISTRIBUTOR">Distributor</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label style="font-size: 12px;">Country*</label>
-                                <select name="firm_type" required class="form-select border-0 bg-light px-4" id="">
+                                <label>Country <span class="required">*</span></label>
+                                <select name="country" required class="form-select border-0 bg-light px-4">
+                                    <option value="">Select country</option>
                                     <option value="India">India</option>
                                     <option value="UAE">UAE</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Others">Others</option>
                                 </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label style="font-size: 12px;">GST No*</label>
-                                <input name="name" type="text" required class="form-control border-0 bg-light px-4" placeholder="GST Number"
-                                    style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <label style="font-size: 12px;">PAN No*</label>
-                                <input name="name" type="text" required class="form-control border-0 bg-light px-4" placeholder="PAN Number"
-                                    style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <label style="font-size: 12px;">Address*</label>
-                                <textarea name="body" class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Address"
-                                    required></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                <label style="font-size: 12px;">City</label>
-                                <input name="name" type="text" required class="form-control border-0 bg-light px-4" placeholder="City"
-                                    style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <label style="font-size: 12px;">State*</label>
-                                <select name="firm_type" required class="form-select border-0 bg-light px-4" id="">
-                                    <option value="Kerala">Kerala</option>
-                                    <option value="Tamil Nadu">Tamil Nadu</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label style="font-size: 12px;">PIN*</label>
-                                <input name="name" type="text" required class="form-control border-0 bg-light px-4" placeholder="PIN Code"
-                                    style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <label style="font-size: 12px;">Country*</label>
-                                <input name="name" type="text" required class="form-control border-0 bg-light px-4" placeholder="India"
-                                    style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Application</button>
                             </div>
                         </div>
+    
+                        <!-- Tax Information -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label>GST Number <span class="required">*</span></label>
+                                <input name="gst_number" type="text" required class="form-control border-0 bg-light px-4"
+                                    placeholder="GST Number">
+                            </div>
+                            <div class="col-md-6">
+                                <label>PAN Number <span class="required">*</span></label>
+                                <input name="pan_number" type="text" required class="form-control border-0 bg-light px-4"
+                                    placeholder="PAN Number">
+                            </div>
+                        </div>
+    
+                        <!-- Address Information -->
+                        <div class="mb-4">
+                            <label>Address <span class="required">*</span></label>
+                            <textarea name="address" class="form-control border-0 bg-light px-4 py-3" rows="4"
+                                placeholder="Complete Address" required></textarea>
+                        </div>
+    
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label>City <span class="required">*</span></label>
+                                <input name="city" type="text" required class="form-control border-0 bg-light px-4"
+                                    placeholder="City">
+                            </div>
+                            <div class="col-md-6">
+                                <label>State <span class="required">*</span></label>
+                                <select name="state" required class="form-select border-0 bg-light px-4">
+                                    <option value="">Select state</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label>PIN Code <span class="required">*</span></label>
+                                <input name="pin_code" type="text" required class="form-control border-0 bg-light px-4"
+                                    placeholder="PIN Code">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Contact Number <span class="required">*</span></label>
+                                <input name="contact_number" type="tel" required class="form-control border-0 bg-light px-4"
+                                    placeholder="Contact Number">
+                            </div>
+                        </div>
+    
+                        <div class="mb-4">
+                            <label>Email Address <span class="required">*</span></label>
+                            <input name="email" type="email" required class="form-control border-0 bg-light px-4"
+                                placeholder="Email Address">
+                        </div>
+    
+                        <!-- Services/Products Section -->
+                        <div class="services-section">
+                            <h5 class="services-title">
+                                <i class="fa fa-cogs me-2"></i>Services & Products Offered
+                            </h5>
+                            <p class="text-muted mb-3">Please select all services and products your company can provide:
+                            </p>
+    
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="cnc_machining" name="services[]" value="CNC Machining">
+                                    <label for="cnc_machining">CNC Machining</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="laser_cutting" name="services[]" value="Laser Cutting">
+                                    <label for="laser_cutting">Laser Cutting</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="water_jet_cutting" name="services[]"
+                                        value="Water Jet Cutting">
+                                    <label for="water_jet_cutting">Water Jet Cutting</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="bearings" name="services[]" value="Bearings">
+                                    <label for="bearings">Bearings</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="fasteners" name="services[]" value="Fasteners">
+                                    <label for="fasteners">Fasteners</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="motors" name="services[]" value="Motors">
+                                    <label for="motors">Motors</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="sensors" name="services[]" value="Sensors">
+                                    <label for="sensors">Sensors</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="stainless_steel" name="services[]"
+                                        value="Stainless Steel Raw Materials">
+                                    <label for="stainless_steel">Stainless Steel (Tubes, Rods, Sheets, Blocks,
+                                        Angles)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="mild_steel" name="services[]"
+                                        value="Mild Steel Raw Materials">
+                                    <label for="mild_steel">Mild Steel (Tubes, Rods, Sheets, Blocks, Angles)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="aluminium" name="services[]" value="Aluminium Raw Materials">
+                                    <label for="aluminium">Aluminium (Tubes, Rods, Sheets, Blocks, Angles)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="hardware" name="services[]" value="Hardware">
+                                    <label for="hardware">Hardware</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="drilling" name="services[]" value="Drilling Services">
+                                    <label for="drilling">Drilling Services</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="welding" name="services[]" value="Welding Services">
+                                    <label for="welding">Welding Services</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="fabrication" name="services[]" value="Metal Fabrication">
+                                    <label for="fabrication">Metal Fabrication</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="others" name="services[]" value="Others">
+                                    <label for="others">Others</label>
+                                </div>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label>Additional Services (Please specify if you selected "Others" or want to add more
+                                    details)</label>
+                                <textarea name="additional_services" class="form-control border-0 bg-light px-4 py-3"
+                                    rows="3"
+                                    placeholder="Please describe any additional services or products you offer..."></textarea>
+                            </div>
+                        </div>
+    
+                        <!-- Submit Button -->
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Application</button>
+                        </div>
                     </form>
-
-                      
                 </div>
-                
             </div>
         </div>
     </div>
-
-    <!-- Contact End -->
-
+    <!-- Vendor Registration Form End -->
 
 
     
@@ -211,6 +339,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/vendor.js"></script>
 
 </body>
 
