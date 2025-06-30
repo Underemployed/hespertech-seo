@@ -134,3 +134,15 @@ grid-template-columns: 1fr;
         max-width: 100%;
     }
 }
+/* DETECT OVERFLOW  */
+/* 
+[...document.querySelectorAll('*')].forEach(el=> {
+        if (el.offsetWidth > window.innerWidth) console.log(el);
+    });
+*/
+
+/* GET RID OF OVERFLOW */
+
+/* body {
+    overflow-x: hidden;
+} */
