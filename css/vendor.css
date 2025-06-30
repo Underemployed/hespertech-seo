@@ -1,20 +1,20 @@
 /* Match your website's theme */
 .bg-primary {
-    background-color: #007bff !important;
+    background-color: #007cba !important;
 }
 
 .text-primary {
-    color: #007bff !important;
+    color: #007cba !important;
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #007cba;
+    border-color: #007cba;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #2bb1e0;
+    border-color: #2bb1e0;
 }
 
 .form-control {
@@ -34,7 +34,7 @@
 .form-control:focus,
 .form-select:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    border-color: #007bff;
+    border-color: #007cba;
 }
 
 .section-title {
@@ -70,13 +70,13 @@
 
 .checkbox-item:hover {
     background-color: #e3f2fd;
-    border-color: #007bff;
+    border-color: #007cba;
 }
 
 .checkbox-item input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    accent-color: #007bff;
+    accent-color: #007cba;
 }
 
 .checkbox-item label {
@@ -87,7 +87,7 @@
 }
 
 .services-title {
-    color: #007bff;
+    color: #007cba;
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
