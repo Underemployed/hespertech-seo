@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
             label.removeAttribute('for');
         }
 
+
+        
         item.addEventListener('click', function (e) {
             if (e.target !== checkbox) {
                 checkbox.checked = !checkbox.checked;
