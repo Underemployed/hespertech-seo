@@ -25,9 +25,22 @@ https://script.google.com/macros/s/AKfycbxJlv1NmFlwGK6TAzSaIe1etXk6FUJlU6vw6pvBS
         data: JSON.stringify(data),
         success: function (response) {
             // console.log("Success:", response);
-            $(".loader-text").html("Message sent successfully");
-            $(".send-div").addClass("success");
-            $(".send-div").fadeOut(2000);
+
+            if (response.result === "success") {
+
+                $(".loader-text").html("Message sent successfully");
+                $(".send-div").addClass("success");
+                $(".send-div").fadeOut(2000);
+
+            } else {
+
+                $(".loader-text").html("An error occurred while sending the message.<br>Please try again later.");
+                $(".send-div").fadeOut(2000);
+                $(".send-div").addClass("error");
+
+            }
+
+            
         },
         error: function (err) {
             $(".loader-text").html("An error occurred while sending the message.<br>Please try again later.");

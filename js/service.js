@@ -21,7 +21,7 @@ $("#service-form").submit(function (e) {
         url: `
         
 https://script.google.com/macros/s/AKfycbx-PPZmb9BvVfvvgoBsnATLk5EZSxEn9Xjofh8Atyoxv4NFiEMi4bgbZRw7rCuK7me9/exec
-
+c
         `.trim(),
         method: "POST",
         data: JSON.stringify(data),

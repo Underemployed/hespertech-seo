@@ -98,8 +98,8 @@ https://script.google.com/macros/s/AKfycbxi6nBxc-7kdabK79nZB9_RAz172aTNzEyDH86jz
                 $(".send-div").addClass("success");
                 $(".send-div").fadeOut(3000);
                 // Reset form after successful submission
-                // $("#vendor-form")[0].reset();
-                // //Reset field border colors
+                $("#vendor-form")[0].reset();
+                //Reset field border colors
 
                 requiredFields.forEach(field => {
                     field.style.borderColor = '#e9ecef';
