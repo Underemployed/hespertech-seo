@@ -20,8 +20,8 @@ $("#service-form").submit(function (e) {
     $.ajax({
         url: `
         
-https://script.google.com/macros/s/AKfycbx-PPZmb9BvVfvvgoBsnATLk5EZSxEn9Xjofh8Atyoxv4NFiEMi4bgbZRw7rCuK7me9/exec
-c
+https://script.google.com/macros/s/AKfycbzO0gti5SN5HpuEaX7g8Hl8Q4aTgKQKMIr-qzukbcJJbtJn9rC7ZFWFMam9Jno2pHHy/exec
+
         `.trim(),
         method: "POST",
         data: JSON.stringify(data),
