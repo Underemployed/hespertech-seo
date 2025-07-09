@@ -779,14 +779,10 @@ h6,
 /* navbar-logo end*/
 
 
-@media (max-width: 1400px) {
-    .email-truncate {
-        max-width: 200px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
+
+
+
+
 
 
 /* Service page form container */
