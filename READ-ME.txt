@@ -1,11 +1,225 @@
-  =>  Template Name    : Startup - Startup Website Template
+CASE STUDY:
+[1.] Case Study: Custom 1-Ton Construction Hoist – 68 Feet (4+G Height)
+Client: R Sanjaykumar, Managing Director, SK Builders & Developers
+Project Background
+SK Builders & Developers approached Hesper Tech Pvt Ltd with a unique challenge: design
+a material hoist tailored for their high-rise building projects — not just another standard unit,
+but a completely re-engineered solution that addressed both versatility and site-specific
+constraints.
+Client Requirements & Design Challenges:
+• Wider Bucket Design: To fit at least 2 large cement bucket trolleys without spillage or
+imbalance.
+• Personnel Safety: The hoist had to be stable and secure for safe transport of workers
+across all levels.
+• Anchor-Free Mechanism: No permanent anchors were to be used at different levels,
+enabling the free movement of materials like 6-meter-long rods and other oversized raw
+construction supplies.
+• Unique Layout: The design was to stand out from conventional hoists, functionally and
+visually.
+• Cost-Effective Build: It had to be engineered to balance affordability and reliability.
+• Tight Deadline: Everything — from ideation and design to testing and final delivery —
+had to be wrapped up within 5 months.
+Hesper Tech’s Solution:
+Our team took a collaborative and hands-on approach, turning these unique demands into a
+full-fledged solution:
+• Reimagined Structure: Developed a brand-new hoist framework that could function
+without anchoring at different levels, while still ensuring stability at 68 feet height.
+• Reinforced, Oversized Bucket: Designed to carry at least 2 wide cement trolleys and
+even 6m steel rods without disrupting balance or motion.
+• Safety-Centric Features: Introduced stable cable-based pulley, guide rails, and fail-safe
+brake motors for safe personnel movement.
 
-  =>  Template Link    : https://htmlcodex.com/startup-website-template
+• Optimized Load Handling: Engineered the lifting mechanism for smooth elevation and
+descent across variable loads.
+• Rapid Execution: Despite the design complexity, we met the five-month delivery
+timeline, including structural testing and on-site integration.
+Impact & Outcome:
+• Client’s Vision Realized: The final system addressed every specific need — including
+spatial constraints, functionality, and worker safety.
+• Improved Site Productivity: Transport of both materials and labour became faster and
+more flexible.
+• Anchor-Free Versatility: Enabled easier manoeuvring and transportation of raw
+materials, helping streamline construction flow.
+• Delivered On Time: Completed within the promised timeframe, helping SK Builders
+avoid project delays.
+Conclusion:
+This project exemplifies Hesper Tech’s strength in converting non-standard requirements into
+smart, real-world solutions. Working closely with R Sanjaykumar and the SK Builders team,
+we delivered a hoist that not only matched their expectations — but redefined what a
+construction hoist could do in terms of safety, versatility, and design.
+[2.] Vibrationless Patient Trolley with Detachable Bed
+Collaborating Partners:
+• Hesper Tech Pvt Ltd
+• Sree Chitra Tirunal Institute for Medical Sciences and Technology (SCTIMST)
+• Government Engineering College, Barton Hill (GECBH)
+Project Overview:
+The Vibrationless Patient Trolley with Detachable Bed is a collaborative research and
+development project aimed at enhancing patient comfort and safety during medical transport.
+The goal is to minimize vibrations experienced by patients, particularly those in critical
+conditions, while also providing a detachable bed system for seamless transfers.
+Challenges & Client Requirements:
+Minimization of Vibrations – Patients being transported often experience discomfort and
+potential medical complications due to vibrations from uneven surfaces.
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+Detachable Bed Mechanism – The bed must be easily removable to facilitate quick patient
+transfers between different medical equipment and environments.
+Structural Stability & Weight Optimization – The trolley had to be lightweight yet strong,
+ensuring durability without compromising maneuverability.
+Ease of Use for Healthcare Professionals – The system had to be intuitive and easy to operate,
+reducing strain on hospital staff.
 
-  =>  Template Author  : HTML Codex
+Hesper Tech’s Approach & Solution:
+Hesper Tech Pvt Ltd played a crucial role in developing and optimizing the mechanical
+structure and damping system to meet the project’s goals.
+• Advanced Vibration Damping System – Designed a shock absorption mechanism that
+significantly reduces vibrations from uneven floors and sudden movements.
+• Detachable Bed Engineering – Developed a lightweight, secure, and easy-to-operate
+bed detachment system, ensuring seamless patient transfer with minimal effort.
+• Ergonomic & User-Friendly Design – The trolley was designed for hospital and
+emergency use, featuring adjustable height, smooth mobility, and easy handling.
+• Material Selection & Durability Testing – Ensured the trolley’s structural integrity by
+using lightweight but high-strength materials to support varying patient loads.
+Outcome & Impact:
+• Enhanced Patient Comfort: Significantly reduces vibrations and sudden jolts, making
+patient transport safer.
+• Efficient Medical Transfers: The detachable bed feature simplifies movement between
+medical stations, reducing stress on both patients and healthcare providers.
+• Durable & Practical: Built with high-quality materials to ensure long-term reliability in
+hospital and emergency environments.
+• Innovative Healthcare Solution: This project serves as a benchmark for future
+advancements in patient mobility and medical transport technologies.
+Conclusion:
+This collaboration between Hesper Tech Pvt Ltd, SCTIMST, and GECBH is an excellent
+example of engineering-driven healthcare innovation. By combining mechanical precision,
 
-  =>  Author Website   : https://htmlcodex.com
+medical expertise, and practical design, the project successfully delivers a functional and
+patient-friendly solution for hospitals and emergency services.
+[3.] High visibility point indicator for non-interlocked/Manual track switching
+points
+Collaborating Authority: Southern Railway, Thiruvananthapuram Division
+Project Partner: Hesper Tech Pvt. Ltd.
+Project Title: High Visibility Mechanical Point Indicator for Manual Track Switching
+Points.
+Overview
+This case study highlights the power of hands-on collaboration in solving a pressing
+operational challenge on the ground. When the Divisional Railway Manager (DRM) of
+Thiruvananthapuram Division raised a safety concern regarding manual track switching
+in non-interlocked yards, Hesper Tech Pvt. Ltd. was brought in to explore a practical
+solution. What followed was a focused and fruitful partnership that resulted in the design,
+testing, and deployment of a fully mechanical point indication system—improving
+visibility, reducing risk, and strengthening trust between public and private sectors.
+The Challenge
+In non-interlocked yards like Irumpanam, manual point switching is routine. However,
+the absence of a visual feedback mechanism left loco pilots and ground staff relying on
+verbal confirmation or physical inspection to determine the direction of the switched
+track. This led to frequent delays, misrouted movements, and heightened safety risks—
+particularly during low visibility conditions. The DRM recognized this as a significant
+operational gap and approached Hesper Tech to develop a system that could be
+implemented quickly and maintained with ease.
+Our Solution
+Hesper Tech proposed a fully mechanical, low-maintenance system that would work
+seamlessly alongside existing railway infrastructure. The key requirements were:
+• Independence from electrical power
+• High visibility during both day and night
+• Compact, modular design for easy installation and servicing
+• Mechanical linkage with the track switch for synchronized movement
 
-  =>  About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
+A prototype of the Mechanical Point Indicator was built and tested at Trivandrum Central
+Yard. The device used a directional arrow mechanically linked to the point switch lever,
+ensuring that the indicator accurately reflected the live track position at all times.
+From Prototype to Field Deployment
+Following successful trials and refinements at Trivandrum Central, two additional units
+were deployed for field validation at Marshall Yard and Nagercoil Junction Station.
+Feedback from ground teams affirmed the product’s reliability and ease of use. With these
+results, Southern Railway approved the installation of nine more indicators at Irumpanam
+Yard. Hesper Tech carried out the design, in-house fabrication, and installation of all
+twelve units delivered so far.
+Implementation Highlights
+• Units Delivered: 12 Mechanical Point Indicators (3 trial units + 9 deployed at
+Irumpanam Yard)
+• Key Supporters: DRM, Sr. DOM, Sr. DEN, ADEN - NCJ, Former Sr. DSO, staff of
+Operating & Engineering Departments
+• Fabrication: Fully in-house by Hesper Tech Pvt. Ltd.
+Impact
+• Provided loco pilots with immediate, reliable visual confirmation of point direction
+• Improved yard safety and reduced manual coordination requirements
+• Enabled quick deployment without electrical infrastructure changes
+• Reinforced the potential of field-driven innovation through collaboration
+Conclusion
+This project stands as a clear example of how collaborative thinking and rapid, on-site
+development can address real-world challenges in railway operations. Initiated by a need
+identified directly by Southern Railway’s leadership and executed by Hesper Tech with
+precision, the Mechanical Point Indicator solution has delivered measurable
+improvements in safety and operational clarity. With growing interest and continued
+support, further deployments are anticipated across other non-interlocked yards.
+(All the images and videos are upload in the drive folder)
+
+
+
+
+
+
+
+
+
+1. Development of a 1-Ton Capacity Construction/Builders Hoist (November 2023- April
+2023)
+In April 2023, HESPER TECH successfully designed, developed, and delivered a fully
+functional 1-Ton Capacity Construction/Builders Hoist with a height of 68 feet (4+G floors).
+This project, tailored for a construction-based organisations, showcased the company’s
+expertise in mechanical engineering and fabrication. The hoist has been operational since its
+testing and installation phase, proving its reliability and efficiency in real-world construction
+applications.
+
+Govt. Engineering College, Barton Hill,
+Thiruvananthapuram, Kerala, India-695035
+8281877470, 7907047736
+hespertechpvtltd@gmail.com
+U72900KL2022PTC076964
+
+2. Patent Grant for Automated Braking System
+In February 2024, HESPER TECH achieved a significant intellectual milestone with the
+granting of a patent titled “Automated Braking System and Method”. This patent, involving the
+founders of HESPER TECH as applicants, highlights the company’s commitment to innovation
+and its ability to develop groundbreaking technologies that address real-world challenges.
+
+3. Collaboration with Sree Chitra Tirunal Institute for Medical Sciences & Technology
+(SCTIMST)
+HESPER TECH achieved a significant milestone by completing its official vendor registration
+with SCTIMST, a premier medical research institute. This partnership enabled the company to
+contribute to the transformation of innovative patent concepts into fully functional prototypes,
+furthering advancements in medical technology.
+• First Work Order (January 2024): (Timeline: January 2024 – August 2024)
+HESPER TECH successfully converted the patent concept of an X-Ray Shield Box with
+XYZ Translation Stage and Specimen Holder into a fully functional prototype. The
+prototype was delivered in the last week of August 2024, marking a major step in
+supporting SCTIMST’s research and development efforts.
+
+• Second Work Order (April 2024): (Timeline: April 2024 – January 2025)
+The company was entrusted with another critical project to develop a Patient Trolley
+with a Suspension System. The prototype was handed over in the second week of
+January 2025, further solidifying HESPER TECH’s reputation as a trusted partner in
+medical innovation.
+
+4. Fabrication and Erection of Scooping Kiosk for Amul (Timeline: September 2024 –
+November 2024)
+HESPER TECH expanded its portfolio by completing vendor registration and securing a work
+order from Gujarat Co-operative Milk Marketing Federation Limited to fabricate and erect
+a Scooping Kiosk for Amul at Smart Bazaar, Pazhvangadi, Trivandrum. The project was
+successfully completed in the final week of November 2024, showcasing the company’s
+versatility in handling diverse fabrication projects.
+5. Partnership with Thompsons Electromatic Tyre Machines (Timeline: November 2024
+– ongoing)
+HESPER TECH entered into an official agreement with Thompsons Electromatic Tyre
+Machines, a Thrissur-based firm specializing in patented tyre retreading machines. Under this
+collaboration, HESPER TECH provides CAD services, including the generation of CAD
+models, technical drawings, and renders, using reverse engineering techniques. This partnership
+has enabled Thompsons to enhance its market presence and product offerings, further
+demonstrating HESPER TECH’s ability to deliver value-added solutions.
+6. Design and Fabrication of a Multifunctional Wheelchair-Cum-Stretcher (ongoing)
+HESPER TECH is currently engaged in the design and fabrication of a Multifunctional
+Wheelchair-Cum-Stretcher with Enhanced Accessibility and Optional Seating Expansion. This
+innovative project aims to address the needs of individuals with mobility challenges by
+combining the functionalities of a wheelchair and a stretcher into a single, versatile device. The
+design focuses on enhanced accessibility, user comfort, and adaptability, with an optional
+seating expansion feature to accommodate varying user requirements.
