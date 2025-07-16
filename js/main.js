@@ -126,12 +126,28 @@
 
 // ---------------------- DOM READY ------------------------
 
+
 $(document).ready(function () {
     let loadedComponents = 0;
-    const totalComponents = 5;
+    const totalComponents = 6;
+    
+    $("#spinner").css({
+        'opacity': '1',
+        'visibility': 'visible',
+        'transition': 'opacity .5s ease-out, visibility 0s linear'
+    });
 
     function onComponentLoad() {
+        
         loadedComponents++;
+        const opacity = Math.max(0, 1 - (loadedComponents / totalComponents));
+        
+        $("#spinner").css({
+            'opacity': opacity,
+            'visibility': opacity > 0 ? 'visible' : 'hidden',
+            'transition': 'opacity .5s ease-out, visibility 0s linear .5s'
+        });
+
         if (loadedComponents === totalComponents) {
             const currentPath = window.location.pathname.split("/").pop().split(".")[0] || "index";
             updateActiveLink(currentPath);
@@ -148,6 +164,7 @@ $(document).ready(function () {
     loadHTML('#nav', 'html/nav.html', onComponentLoad);
     loadHTML('#client_logo', 'html/client_logo.html', onComponentLoad);
     loadHTML('#footer', 'html/footer.html', onComponentLoad);
+    loadHTML('#team', 'html/team.html', onComponentLoad);
 
     // Project carousel
     $('.project-carousel').owlCarousel({
@@ -192,7 +209,7 @@ function updateActiveLink(currentPath) {
         "service": "service",
         "portfolio": "portfolio",
         "contact": "contact",
-        "job": "job"
+        "job": "job",        
     };
 
     const elementId = pathToIdMap[currentPath] || currentPath;
