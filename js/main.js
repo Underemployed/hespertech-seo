@@ -128,7 +128,7 @@
 
 $(document).ready(function () {
     let loadedComponents = 0;
-    const totalComponents = 5;
+    const totalComponents = 6;
 
     function onComponentLoad() {
         loadedComponents++;
@@ -148,6 +148,7 @@ $(document).ready(function () {
     loadHTML('#nav', 'html/nav.html', onComponentLoad);
     loadHTML('#client_logo', 'html/client_logo.html', onComponentLoad);
     loadHTML('#footer', 'html/footer.html', onComponentLoad);
+    loadHTML('#team', 'html/team.html', onComponentLoad);
 
     // Project carousel
     $('.project-carousel').owlCarousel({
@@ -192,7 +193,7 @@ function updateActiveLink(currentPath) {
         "service": "service",
         "portfolio": "portfolio",
         "contact": "contact",
-        "job": "job"
+        "job": "job",        
     };
 
     const elementId = pathToIdMap[currentPath] || currentPath;
