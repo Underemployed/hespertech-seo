@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark px-3 py-3 py-lg-0 align-items-center">
     <a href="index.html" class="navbar-brand p-0 m-0">
         <div class="d-flex align-items-center nav-logo">
-           <img id="navbar-logo" src="img\logo\Logo 3.30.png" alt="Hespertech" style="margin:10px;"  height =70px width="auto">
-        </div> 
+            <img id="navbar-logo" src="img/logo/logo_3.30.png" alt="Hespertech" style="margin:10px;" height=70px
+                width="auto">
+        </div>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span>
@@ -23,41 +24,51 @@
 
             <a href="job.html" class="nav-item nav-link" id="job">Job</a>
             <div class="nav-item dropdown">
-                <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu m-0">
                     <a href="portfolio.html#history" class="dropdown-item">Company History</a>
                     <a href="portfolio.html#team" class="dropdown-item">Team Members</a>
+                    <a href="blog_detail.html" class="dropdown-item">Blog</a>
                 </div>
             </div>
 
             
             <a href="contact-us.html" class="btn btn-primary py-2 px-3 ms-3">Contact Us</a>
         </div>
-    </div>
+           
+    </div>
     <script>
 
-    document.addEventListener('DOMContentLoaded', function() {
-        // Navbar logo change
-        const logo = document.getElementById('navbar-logo');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Navbar logo change
+            const logo = document.getElementById('navbar-logo');
 
-        function updateLogo() {
-            const navbar = document.querySelector('.navbar');
-            const width = window.innerWidth;
-            // console.log(width)
 
-            if (window.scrollY > 50 || width < 1100) {
-                logo.src = "img/project/blue text logo.png";
-            } else {
-                logo.src = "img/project/Logo 3.30.png";
+            function updateLogo() {
+                const navbar = document.querySelector('.navbar');
+                const width = window.innerWidth;
+                // console.log(width)
+
+                  if (scrollY > 50 || (width > 400 && width < 1100)) {
+                    logo.src = "img/logo/blue_text_logo.png";
+                } else if (width < 400) {
+                    logo.src = "img/logo/hespertech-logo-min.png";
+                }
+                else if(width > 400 && width < 1100){
+                    logo.src = "img/logo/blue_text_logo.png";
+                }
+                else
+                 {
+                    logo.src = "img/logo/logo_3.30.png";
+                }
+
             }
-            
-        }
 
-        window.addEventListener('scroll', updateLogo);
-        window.addEventListener('resize', updateLogo);
-        updateLogo(); // Initial check
-    });
+            window.addEventListener('scroll', updateLogo);
+            window.addEventListener('resize', updateLogo);
+            updateLogo(); // Initial check
+        });
 
     </script>
-    
+
 </nav>

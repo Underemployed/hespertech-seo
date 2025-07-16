@@ -95,7 +95,8 @@
 }
 
 #timeline{
-    background-image: url("../img/proj1.jpg");
+    /* background-image: url("../img/"); */
+    background: linear-gradient(135deg, #ffffff 0%, #e6f7ff 40%, #007cba 100%);
     background-repeat: no-repeat;
     background-size: cover;
 }
