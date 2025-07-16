@@ -126,12 +126,28 @@
 
 // ---------------------- DOM READY ------------------------
 
+
 $(document).ready(function () {
     let loadedComponents = 0;
     const totalComponents = 6;
+    
+    $("#spinner").css({
+        'opacity': '1',
+        'visibility': 'visible',
+        'transition': 'opacity .5s ease-out, visibility 0s linear'
+    });
 
     function onComponentLoad() {
+        
         loadedComponents++;
+        const opacity = Math.max(0, 1 - (loadedComponents / totalComponents));
+        
+        $("#spinner").css({
+            'opacity': opacity,
+            'visibility': opacity > 0 ? 'visible' : 'hidden',
+            'transition': 'opacity .5s ease-out, visibility 0s linear .5s'
+        });
+
         if (loadedComponents === totalComponents) {
             const currentPath = window.location.pathname.split("/").pop().split(".")[0] || "index";
             updateActiveLink(currentPath);
