@@ -30,4 +30,4 @@ Disallow: /READ-ME.txt
 Disallow: /LICENSE.txt
 
 # Sitemap 
-Sitemap: https://underemployed.github.io/hespertech-seo/sitemap.xml
+Sitemap: https://hespertech.in/sitemap.xml
